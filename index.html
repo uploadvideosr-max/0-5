@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balkan Media – Windows aplikacije</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+  text-align:center;
+}
+
+/* HEADER */
+header{
+  padding:35px 20px 20px;
+}
+
+.main-logo{
+  font-size:44px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:15px;
+  animation:colorShift 6s infinite alternate;
+}
+
+header h1{
+  font-size:36px;
+  margin-bottom:10px;
+  animation:colorShift 4s infinite alternate;
+}
+header p{
+  opacity:.85;
+}
+
+@keyframes colorShift{
+  0%{color:#25d366;text-shadow:0 0 10px #25d366}
+  50%{color:#4da3ff;text-shadow:0 0 10px #4da3ff}
+  100%{color:#ff4d8d;text-shadow:0 0 10px #ff4d8d}
+}
+
+/* CONTAINER GRID */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+}
+
+/* APP CARD */
+.app{
+  background:rgba(255,255,255,0.08);
+  border-radius:22px;
+  padding:20px;
+  backdrop-filter:blur(10px);
+  transition:.4s;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.app:hover{
+  transform:translateY(-6px);
+}
+
+/* APP LOGO IMAGE */
+.app-logo{
+  width:90px;
+  height:90px;
+  object-fit:contain;
+  margin-bottom:10px;
+  animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+
+/* DESCRIPTION */
+.app p{
+  font-size:14px;
+  margin-bottom:12px;
+  opacity:0.9;
+}
+
+/* DOWNLOAD BUTTON */
+.download{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 25px;
+  background:#25d366;
+  color:#000;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:700;
+  transition:.3s;
+}
+.download:hover{
+  box-shadow:0 0 20px rgba(37,211,102,.7);
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+  margin:40px 0 20px;
+  font-size:14px;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="main-logo">Balkan Media</div>
+  <h1><i class="fab fa-windows"></i> Windows aplikacije</h1>
+  <p>Direktno preuzimanje aplikacija</p>
+</header>
+
+<div class="container">
+
+<!-- APP 1 -->
+<div class="app">
+<img src="images/ibo_pro_player_ios.png" alt="IB Player Pro" class="app-logo">
+<h3 class="app-title">IB Player Pro</h3>
+<p>Windows aplikacija za gledanje IPTV sadržaja.</p>
+<a class="download" href="#" target="_blank">
+<i class="fas fa-download"></i> Preuzimanje
+</a>
+</div>
+
+<!-- APP 2 -->
+<div class="app">
+<img src="images/ibo_player_ios.png" alt="IBO Player" class="app-logo">
+<h3 class="app-title">IBO Player</h3>
+<p>Windows aplikacija za gledanje IPTV sadržaja.</p>
+<a class="download" href="#" target="_blank">
+<i class="fas fa-download"></i> Preuzimanje
+</a>
+</div>
+
+<!-- APP 3 -->
+<div class="app">
+<img src="images/ibo_player_pro_ios.png" alt="IBO Player Pro" class="app-logo">
+<h3 class="app-title">IBO Player Pro</h3>
+<p>Windows aplikacija za gledanje IPTV sadržaja.</p>
+<a class="download" href="#" target="_blank">
+<i class="fas fa-download"></i> Preuzimanje
+</a>
+</div>
+
+<!-- APP 4 -->
+<div class="app">
+<img src="images/bob_player_ios.png" alt="BOB Player" class="app-logo">
+<h3 class="app-title">BOB Player</h3>
+<p>Windows aplikacija za gledanje IPTV sadržaja.</p>
+<a class="download" href="#" target="_blank">
+<i class="fas fa-download"></i> Preuzimanje
+</a>
+</div>
+
+<!-- APP 5 -->
+<div class="app">
+<img src="images/vu_player_pro_ios.png" alt="VU Player Pro" class="app-logo">
+<h3 class="app-title">VU Player Pro</h3>
+<p>Windows aplikacija za gledanje IPTV sadržaja.</p>
+<a class="download" href="#" target="_blank">
+<i class="fas fa-download"></i> Preuzimanje
+</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Balkan Media
+</footer>
+
+</body>
+</html>
